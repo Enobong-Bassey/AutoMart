@@ -1,0 +1,21 @@
+footer {
+    background-color: #222;
+    color: #999;
+    border-radius: 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbar {
+    border-radius: 0;
+}
+
+#upper-header {
+    height: 10vh;
+    background-color: cadetblue;
+    font-size: 3em;
+    font-family: Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Legendary Car - Home</title>
+</head>
+<body>
+    <header>
+        <div id="upper-header">
+            <div class="row justify-content-center">
+              <h3 style="padding: 40px;">Legendary Cars</h3>
+                <!-- <img src="./images/Mercedes-Benz 300 SL.jpg">
+                <img src="./images/Chevrolet Bel Air.jpg">
+                <img src="./images/Aston Martin DB5.jpg">
+                <img src="./images/Rolls-Royce Silver Dawn.jpg">
+                <img src="./images/Ferrari 375 F1.jpg">                 -->
+            </div>
+        </div>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>                        
+                </button>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                  <li><a href="./index.html">Home</a></li>
+                  <li><a href="./about.html">About</a></li>
+                  <li><a href="./services.html">Services</a></li>
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Inventory <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">View listings</a></li>
+                      <li><a href="./searchInventory.html">Search</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Contact</a></li>
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Settings <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="addInventory">Add a vehicle</a></li>
+                      <li><a href="#">Update vehicle data</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>          
+    </header>
+    <main>
+        <div class="container">
+            <div class="row" id="pageHeading">
+                <h2><b>Contact us</b></h2><hr>
+            </div>
+            <div class="row" id="contactColumns">
+                <div class="col-md-4 col-sm-8" id="contactLeftColumn">
+        
+                </div>
+                <div class="col-md-4 col-sm-8 form-group" id="contactMidColumn">
+                    <h3 style="text-align: center;"><b>Book a test drive</b></h3><br>
+                    <form action="" method="post">
+                        <p>
+                            <input class="form-control" type="text" name="name" placeholder="Your name">
+                        </p>
+                        <p>
+                            <input class="form-control" type="text" name="phone" placeholder="Your phone number">
+                        </p>
+                        <p>
+                            <input class="form-control" type="email" name="email" placeholder="riley@ymail.com">
+                        </p>
+                        <p>
+                            <input class="form-control" type="date" name="date" placeholder="Pick a date">
+                        </p><br>
+                        <p>
+                            <h4><b>Vehicle Details</b></h4>
+                        </p>
+                        <p>
+                            <select name="make" class="form-control">
+                                <option value="">Select a make . . .</option>
+                            </select>
+                        </p>
+                        <p>
+                            <select name="model" class="form-control">
+                                <option value="">Select a model . . .</option>
+                            </select>
+                        </p>
+                        <p>
+                            <input class="form-control" type="text" name="VIN" placeholder="VIN number . . ." required>
+                        </p>
+                        <p>
+                            <input class="btn btn-primary form-control" type="submit" value="Send Request">
+                        </p>
+                    </form>
+                </div>
+                <div class="col-md-4 col-sm-8 form-group" id="contactRightColumn">
+                    <h3 style="text-align: center;"><b>Drop us a note</b></h3><br>
+                    <form action="" method="post">
+                        <p>
+                            <input type="text" class="form-control" name="name" placeholder="Full Name" required>
+                        </p>
+                        <p>
+                            <input type="email" class="form-control" name="email" placeholder="joe@example.com" required>
+                        </p>
+                        <p>
+                            <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                        </p>
+                        <p>
+                            <textarea class="form-control" name="message"></textarea>
+                        </p>
+                        <p>
+                            <input class="form-control btn btn-primary" type="submit" value="Send">
+                        </p>                
+                    </form>
+                </div>
+            </div>
+        </div>      
+    </main>
+    
+    <footer>
+      <div class="navbar navbar-inverse">
+        <div class="row justify-content-center">
+              Copyright &copy;2023  |  Legendary Cars
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+<!-- <div class="container">
+    <div class="row" id="pageHeading">
+
+    </div>
+    <div class="row" id="contactColumns">
+        <div class="col-md-4 col-sm-8" id="contactLeftColumn">
+
+        </div>
+        <div class="col-md-4 col-sm-8" id="contactMidColumn">
+
+        </div>
+        <div class="col-md-4 col-sm-8 form-group" id="contactRightColumn">
+            <h2><b>Drop us a note</b></h2>
+            <form action="" method="post">
+                <p>
+                    <input class="form-control" name="name" placeholder="Full Name" required>
+                </p>
+                <p>
+                    <input class="form-control" name="email" placeholder="joe@example.com" required>
+                </p>
+                <p>
+                    <input class="form-control" name="subject" placeholder="Subject" required>
+                </p>
+                <p>
+                    <textarea class="form-control" name="message"></textarea>
+                </p>
+                <p>
+                    <input class="form-control btn btn-primary" type="submit" value="Send">
+                </p>                
+            </form>
+        </div>
+    </div>
+</div> -->

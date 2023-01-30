@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Legendary Car - Home</title>
+</head>
+<body>
+    <header>
+        <div id="upper-header">
+            <div class="row justify-content-center">
+              <h3 style="padding: 40px;">Legendary Cars</h3>
+                <!-- <img src="./images/Mercedes-Benz 300 SL.jpg">
+                <img src="./images/Chevrolet Bel Air.jpg">
+                <img src="./images/Aston Martin DB5.jpg">
+                <img src="./images/Rolls-Royce Silver Dawn.jpg">
+                <img src="./images/Ferrari 375 F1.jpg">                 -->
+            </div>
+        </div>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>                        
+                </button>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                  <li><a href="./index.html">Home</a></li>
+                  <li><a href="./about.html">About</a></li>
+                  <li><a href="./services.html">Services</a></li>
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Inventory <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">View listings</a></li>
+                      <li><a href="./searchInventory.html">Search</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Contact</a></li>
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Settings <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="addInventory">Add a vehicle</a></li>
+                      <li><a href="#">Update vehicle data</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>          
+    </header>
+    <main>
+        <div class="container">
+        <div class="row" id="pageHeading">
+            <h2><b>Inventory</b></h2><hr>
+        </div>
+        <div class="row" id="addNewVehicle">
+            <h3 style="text-align: center;"><b>New Vehicle Entry</b></h3><br>
+            <div class="row" id="vehicleDetails">
+                <div class="col-md-4 col-sm-8 form-group" id="vehicleSpecifics">
+                    <h4><b>Add Vehicle Photo</b></h4><br>
+                    <form action="" method="post" enctype="multipart/form-data">
+                        <p>
+                            <input class="form-control" type="file" name="carImage">
+                        </p>
+                        <p>
+                            <input class="btn btn-primary form-control" type="submit" value="Upload" class="btn btn-success">
+                        </p>
+                    </form><br>
+                    <h4><b>Add Vehicle Data</b></h4><br>
+                    <form action="" method="">
+                        <p>
+                            <select class="form-control" name="make">
+                                <option value="">Select car make . . .</option>
+                            </select>
+                        </p>
+                        <p>
+                            <select class="form-control" name="model">
+                                <option value="">Select car model . . .</option>
+                            </select>
+                        </p>
+                        <p>
+                            <textarea class="form-control" name="carStats"></textarea>
+                        </p>
+                        <p>
+                            <input class="btn btn-success form-control" type="submit" value="Submit" name="submit">
+                        </p>
+                    </form>
+                </div>
+                <div class="col-md-8 col-sm-8" id="vehicleImage">
+                    <div class="row" id="vehicleNamePrice">
+
+                    </div>
+                    <div class="col-md-5 col-sm-8" id="vehicleImage">
+
+                    </div>
+                    <div class="col-md-5 col-sm-8" id="vehicleStats">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>     
+    </main>
+    
+    <footer>
+      <div class="navbar navbar-inverse">
+        <div class="row justify-content-center">
+              Copyright &copy;2023  |  Legendary Cars
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+<!-- <div class="container">
+    <div class="row" id="pageHeading">
+        <h2>Our Inventory</h2><hr>
+    </div>
+    <div class="row" id="addNewVehicle">
+        <h3>Add a Car</h3>
+        <div class="row" id="vehicleDetails">
+            <div class="col-md-4 col-sm-8" id="vehicleSpecifics">
+                <h3>Enter car details</h3><br>
+                <form action="" method="post" enctype="multipart/form-data">
+                    <p>
+                        <input type="file" name="carImage">
+                        <input type="submit" value="Upload" class="btn btn-success">
+                    </p>
+                </form>
+                <form action="" method="">
+                    <p>
+                        <select name="make">
+                            <option value="">Select car make . . .</option>
+                        </select>
+                    </p>
+                    <p>
+                        <select name="model">
+                            <option value="">Select car model . . .</option>
+                        </select>
+                    </p>
+                    <p>
+                        <textarea name="carStats"></textarea>
+                    </p>
+                    <p>
+                        <input type="submit" value="Submit" name="submit">
+                    </p>
+                </form>
+            </div>
+            <div class="col-md-8 col-sm-8" id="vehicleImage">
+
+            </div>
+        </div>
+    </div>
+</div> -->
